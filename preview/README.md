@@ -21,8 +21,3 @@ ComfyUI 的新用户经常问是否有办法预览图像。目前还没有这样
 
 模型
 * [animatrix](https://civitai.com/models/21916)
-
-
-
-<!-- 可能会忘记仔细检查这一点 -->
-<p align="right"><a href="..">[返回]</a><a href="../../../.."> [首页]</a></p>

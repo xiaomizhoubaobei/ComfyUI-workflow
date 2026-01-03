@@ -468,6 +468,3 @@ LoRA
 
 放大器
 * 2x PSNR at https://huggingface.co/wyrde/upscales/tree/main/apache2
-
-<!-- 可能会忘记仔细检查这一点 -->
-<p align="right"><a href="..">[返回]</a><a href="../../../.."> [首页]</a></p>

@@ -53,6 +53,3 @@ LoRA
 自定义节点
 * [WAS 套件](https://github.com/WASasquatch/was-node-suite-comfyui)
 * [omar QoL](https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92)
-
-<!-- 可能会忘记仔细检查这一点 -->
-<p align="right"><a href="..">[返回]</a><a href="../../../.."> [首页]</a></p>
