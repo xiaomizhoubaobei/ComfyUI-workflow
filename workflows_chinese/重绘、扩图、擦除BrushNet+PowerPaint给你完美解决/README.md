@@ -97,28 +97,26 @@ git clone https://github.com/nullquant/ComfyUI-BrushNet
 ### 2. 下载模型
 
 #### BrushNet 模型
-从 HuggingFace 下载 BrushNet 模型：
+BrushNet 模型需要手动下载，推荐以下方法：
 
-```bash
-mkdir -p ComfyUI/models/inpaint
+**方法一：使用 ComfyUI Manager（推荐）**
+1. 打开 ComfyUI Manager
+2. 搜索 "ComfyUI-BrushNet"
+3. 点击安装，模型会自动下载
 
-# SD 1.5 版本
-wget https://huggingface.co/Sanster/BrushNet/resolve/main/diffusion_pytorch_model.safetensors
+**方法二：手动下载**
+1. 访问 BrushNet 模型下载页面（知乎等平台）
+2. 下载 SD 1.5 和 SDXL 版本的模型
+3. 创建目录结构：
+   ```bash
+   mkdir -p ComfyUI/models/inpaint/brushnet_sd1.5
+   mkdir -p ComfyUI/models/inpaint/brushnet_xl
+   ```
+4. 将下载的模型文件重命名并放置：
+   - SD 1.5 模型: `ComfyUI/models/inpaint/brushnet_sd1.5/diffusion_pytorch_model.safetensors`
+   - SDXL 模型: `ComfyUI/models/inpaint/brushnet_xl/diffusion_pytorch_model.safetensors`
 
-# SDXL 版本
-wget https://huggingface.co/Sanster/BrushNet/resolve/main/diffusion_pytorch_model_sdxl_v0.safetensors
-```
-
-#### PowerPaint 模型
-下载 PowerPaint 所需模型：
-
-```bash
-# PowerPaint 主模型
-wget https://huggingface.co/open-mmlab/PowerPaint/resolve/main/diffusion_pytorch_model.safetensors
-
-# 文本编码器模型
-wget https://huggingface.co/open-mmlab/PowerPaint/resolve/main/model.safetensors
-```
+**注意**: 下载后模型文件名都是默认的 "diffusion_pytorch_model.safetensors"，建议下载后立即重命名以区分不同版本。
 
 将模型文件放置在 `ComfyUI/models/inpaint/` 目录下。
 
