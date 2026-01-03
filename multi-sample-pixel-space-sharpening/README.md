@@ -52,7 +52,3 @@ WAS 节点
 来自 davemane42 的原始工作流
 <img src="../multi-sample-sharpening/davemane2 ComfyUI_01275_.png" width="20%" align="middle">
 * 基于 reddit 帖子 https://www.reddit.com/r/StableDiffusion/comments/124xv9v/paradise_and_stone/
-
-
-
-<p align="right"><a href="..">[返回]</a><a href="../../../.."> [首页]</a></p>
