@@ -67,14 +67,23 @@
 从 HuggingFace 下载混元 DiT 模型：
 
 ```bash
-# 创建模型目录
-mkdir -p ComfyUI/models/hunyuan
+# 安装 huggingface-cli
+pip install "huggingface_hub[cli]"
 
-# 下载模型
-wget https://huggingface.co/Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers/resolve/main/pytorch_model_ema.pt
+# 创建模型目录
+mkdir -p ComfyUI/models/hunyuan/ckpts
+
+# 下载模型（推荐方法）
+huggingface-cli download Tencent-Hunyuan/HunyuanDiT --local-dir ComfyUI/models/hunyuan/ckpts
 ```
 
-将模型文件放置在 `ComfyUI/models/hunyuan/` 目录下。
+**国内用户加速下载**：
+```bash
+# 使用 HF-Mirror 镜像加速
+HF_ENDPOINT=https://hf-mirror.com huggingface-cli download Tencent-Hunyuan/HunyuanDiT --local-dir ComfyUI/models/hunyuan/ckpts
+```
+
+将模型文件放置在 `ComfyUI/models/hunyuan/ckpts/` 目录下。
 
 ### 2. 安装依赖
 
